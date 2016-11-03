@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zcool</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.pagination.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/pagination.css">
+</head>
+<body>
+	<!-- header -->
+	<div id="header_warper">
+		<div id="header">
+			<!-- logo -->
+			<div class="logo">
+				<h1><a href="#" title="zcool">zcool</a></h1>
+				<img src="images/nav_logo.jpg" alt="建站10周年">
+			</div>
+			<!-- nav -->
+			<div class="nav">
+				<ul>
+					<li class="nav-item"><a href="#" class="first li_a">首页</a></li>
+					<li class="nav-item">
+						<div class="wid60">
+							<a href="#" class="li_a">作品</a><i class="iconfont">&#xe600;</i>
+						</div>
+						<div class="works">
+							<a href="#">全部</a>
+							<a href="#">平面</a>
+							<a href="#">UI</a>
+							<a href="#">网页</a>
+							<a href="#">插画</a>
+							<a href="#">动漫</a>
+							<a href="#">摄影</a>
+							<a href="#">空间/建筑</a>
+							<a href="#">工业/产品</a>
+							<a href="#">三维</a>
+							<a href="#">影视</a>
+							<a href="#">手工艺</a>
+							<a href="#">纯艺术</a>
+							<a href="#">服装</a>
+							<a href="#">其他</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="#" class="li_a">文章</a></li>
+					<li class="nav-item">
+						<div class="wid60">
+							<a href="#" class="li_a">工具</a><i class="iconfont">&#xe600;</i>
+						</div>
+						<ul class="article">
+							<li><a href="#">搜素材</a></li>
+							<li><a href="#">灵感/欣赏</a></li>
+							<li><a href="#">New Tab</a></li>
+							<li><a href="#">站酷字体</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a href="#" class="li_a">招聘</a></li>
+					<li class="nav-item"><a href="#" class="li_a">赛事</a></li>
+					<li class="nav-item">
+						<div class="wid60">
+							<a href="#" class="li_a">更多</a><i class="iconfont">&#xe600;</i>
+						</div>
+						<ul class="more">
+							<li><a href="#">活动</a></li>
+							<li><a href="#">酷友/设计师</a></li>
+							<li><a href="#">酷友精彩评论</a></li>
+							<li><a href="#">站酷专题</a></li>
+							<li><a href="#">嗨洛创意</a></li>
+							<li><a href="#">高高手</a></li>
+							<li><a href="#">站酷客户端</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- form -->
+			<div class="search">
+				<form action="index_submit" method="get" accept-charset="utf-8">
+					<div class="inp">
+						<input type="text" class="txt" />
+						<input type="button" class="btn" />
+						<div class="list">
+							<ul>
+								<li>
+									<label><input type="radio" name="slect" value="" checked="checked">全部</label>
+								</li>
+								<li>
+									<label><input type="radio" name="slect" value="">作品</label>
+								</li>
+								<li>
+									<label><input type="radio" name="slect" value="">文章</label>
+								</li>
+								<li>
+									<label><input type="radio" name="slect" value="">欣赏</label>
+								</li>
+								<li>
+									<label><input type="radio" name="slect" value="">素材</label>
+								</li>
+								<li>
+									<label><input type="radio" name="slect" value="">设计师</label>
+								</li>
+								<li>
+									<label><input type="radio" name="slect" value="">正版图片</label>
+								</li>
+							</ul>
+						</div>			
+					</div>	
+					<ul>
+						<li class="border"><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div class="box">
+		<!-- 焦点图 -->
+		<div id="banner">
+			<a href="javascript:;" class="left_btn btn"></a>
+			<a href="javascript:;" class="right_btn btn"></a>
+			<div class="show">
+				<ul>
+					<li><a href="#"><img src="images/banner (1).jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/banner (2).jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/banner (3).jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/banner (4).jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/banner (5).jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/banner (6).jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--消息-->
+		<div id="news">
+			<marquee behavior="scroll" direction="up" scrollamount="1" width="800" height="48" style="height: 48px; width: 800px;">
+			<p>
+				酷友最新动态：<a href="#">道具师</a>在刚刚把设计素材《<a href="#">办公室</a>》推荐给了粉丝
+			</p>
+            </marquee>
+            <div class="btn">
+            	<a href="javascript:;" class="up" /a>
+            	<a href="javascript:;" class="down"></a>
+            </div>
+		</div>
+		<!-- expand-->
+		<div id="expand">
+			<h2>站酷十周年-向创作者致敬</h2>
+			<div class="btn">
+				<a href="#">发表作品</a>
+				<a href="#">发表文章</a>
+			</div>
+			<ul class="clearfix">
+				<li><a href="#"><img src="images/activity (1).jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/activity (2).jpg" alt=""></a></li>
+				<li style="margin-right: 0;"><a href="#"><img src="images/activity (3).jpg" alt=""></a></li>
+			</ul>
+		</div>
+		<!--原创推荐列表-->
+		<div id="list">
+			<h2>最新原创推荐<span>首推不止是一种认可，还是一种态度！</span></h2>
+			<div class="list">
+				<!-- <dl>
+					<dt>
+						<img src="images/dt_img.jpg" alt="">
+					</dt>
+					<dd>
+						<div class="msg">
+							<h4 class="title">共青湖</h4>
+							<p class="type">
+								<strong>原创作品</strong>
+								<span>-摄影 -环境/建筑</span>
+							</p>
+							<p class="time">49分钟前上传</p>
+							<p class="moods">
+								<span><i>241</i>/人气</span>
+								<span><i>1</i>/评论</span>
+								<span><i>6</i>/推荐</span>
+							</p>
+							<p class="author">
+								<a href="#" class="name">i83</a>
+								<img src="images/dd_auther.jpg" alt="">
+							</p>
+						</div>
+					</dd>
+				</dl> -->
+			</div>
+		</div>
+		<!--翻页按钮-->
+		<div id="page">
+			<div class="pageList clearfix">
+				<!-- <input type="button" value="&lt;" class="btn" id="prev">
+				<ul class="clearfix">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+				<input type="button" value="&gt;" class="btn" id="next"> -->
+			</div>
+		</div>
+		<!--推广位index07-->
+		<div id="index_07">
+			<a href="#">
+				<img src="images/index_07.jpg" alt="">
+			</a>
+		</div>
+		<!--inexDownBox-->
+		<div id="indexDownBox">
+			<!--推荐设计师-->
+			<div class=" ReDesigner designer">
+				<h3>
+					<b>推荐设计师</b>
+					<span><a href="#">更多>></a></span>
+				</h3>
+				<ul>
+					<!-- <li>
+						<a href="#" class="left">
+							<img src="images/pLeft.jpg" alt="">
+						</a>
+						<p class="right">
+							<a href="#">李昂_leo</a><br>
+							北京市/网页设计师<br>
+							粉丝：3790 / 作品：45
+						</p>
+					</li> -->
+				</ul>
+			</div>
+			<!--活跃设计师-->
+			<div class=" AcDesigner designer">
+				<h3>
+					<b>活跃设计师</b>
+					<span><a href="#">更多>></a></span>
+				</h3>
+				<ul>
+					<!-- <li>
+						<a href="#" class="left">
+							<img src="images/pRight.jpg" alt="">
+						</a>
+						<p class="right">
+							<a href="#">vince_cici</a><br>
+							深圳/其他<br>
+							粉丝：4 / 作品：5
+						</p>
+					</li> -->
+				</ul>
+			</div>
+			<!--招聘信息-->
+			<div class="recruit">
+				<h3>
+					<b>好职位在酷站
+						<span>企业找到好设计师，设计师找到好工作</span>
+					</b>
+					<span class="more">
+						<a href="#">发布招聘广告</a>|
+						<a href="#">更多>></a>
+					</span>
+				</h3>
+				<ul class="jobIndex">
+					<!-- <li><a href="#">[上海] 专业的力量!</a></li>
+					<li><a href="#">[上海] 专业的力量!</a></li>
+					<li><a href="#">[上海] 专业的力量!</a></li> -->
+				</ul>
+				<ul class="jobIndexList">
+					<li>
+						<a href="#">
+						    <img src="images/jobIndexList (1).jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						    <img src="images/jobIndexList (2).jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						    <img src="images/jobIndexList (3).jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						    <img src="images/jobIndexList (4).jpg" alt="">
+						</a>
+					</li>
+				</ul>						
+			</div>
+		</div>
+		<!--index_08-->
+		<div id="index_08">
+			<a href="#">
+				<img src="images/index_08.jpg" alt="">
+			</a>
+		</div>
+	</div>
+	<!--footerSearch-->
+	<div id="footerSearch">
+        <div class="ftSearch">
+            <form>
+                <span class="ftChoose">
+                    <span class="ftChooseList">全部</span><i class="iconfont">&#xe600;</i>
+                    <div class="ftChoosePop">
+                        <ul>
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">作品</a></li>
+                            <li><a href="javascript:;">文章</a></li>
+                            <li><a href="javascript:;">欣赏</a></li>
+                            <li><a href="javascript:;">素材</a></li>
+                            <li><a href="javascript:;">设计师</a></li>
+                        </ul>
+                    </div>
+                </span>
+                <input type="text" value="" name="world" class="ftSearchTxt">
+                <input type="submit" value="" class="ftSearchBtn">
+            </form>
+        </div>
+    </div>
+    <!--footer-->
+    <div id="footer_warper">
+    	<div id="footer">
+    		<dl>
+    			<dt><a href="#">关于</a></dt>
+    			<dd><a href="#">关于酷站</a></dd>
+    			<dd><a href="#">版权声明</a></dd>
+    			<dd><a href="#">关于隐私</a></dd>
+    			<dd><a href="#">免责声明</a></dd>
+    			<dd><a href="#">网站地图</a></dd>
+    			<dd><a href="#">加入酷站</a></dd>
+    		</dl>
+    		<dl>
+    			<dt><a href="#">栏目</a></dt>
+    			<dd><a href="#">原创作品</a></dd>
+    			<dd><a href="#">设计文章</a></dd>
+    			<dd><a href="#">设计赛事</a></dd>
+    			<dd><a href="#">精彩评论</a></dd>
+    			<dd><a href="#">海洛创意</a></dd>
+    			<dd><a href="#">酷站高高手</a></dd>
+    		</dl>
+    		<dl>
+    			<dt><a href="#">商务</a></dt>
+    			<dd><a href="#">企业服务</a></dd>
+    			<dd><a href="#">赛事服务</a></dd>
+    			<dd><a href="#">招聘服务</a></dd>
+    			<dd><a href="#">图片服务</a></dd>
+    			<dd><a href="#">培训服务</a></dd>
+    		</dl>
+    		<dl>
+    			<dt><a href="#">联系</a></dt>
+    			<dd><a href="#">在线提问</a></dd>
+    			<dd><a href="#">联系我们</a></dd>
+    			<dd><a href="#">站酷微博</a></dd>
+    			<dd>
+    				<div class="WxinImg">
+						<img src="images/WxinImg.jpg" alt="">
+					</div>
+    				<a href="#">站酷微信</a>
+    			</dd>
+    		</dl>
+    		<dl>
+    			<dt><a href="#">帮助</a></dt>
+    			<dd><a href="#">站酷规则</a></dd>
+    			<dd><a href="#">常见问题</a></dd>
+    		</dl>
+    		<dl>
+    			<dt><a href="#">友链</a></dt>
+    			<dd><a href="#">中电云集</a></dd>
+    			<dd><a href="#">星云网</a></dd>
+    			<dd><a href="#">站长之家</a></dd>
+    			<dd><a href="#">蜂鸟网</a></dd>
+    			<dd><a href="#">汉仪字库</a></dd>
+    			<dd><a href="#">更多</a></dd>
+    		</dl>
+    		<dl class="copyright">
+	            <dt><a href="#">版权信息</a></dt>
+	            <dd>站酷（ZCOOL）会员所发布展示的“原创作品/文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。<br>
+	            <a href="#" target="_blank">京ICP备11017824号-4</a> / <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证130164号</a>
+	            <br>北京市公安局朝阳分局备案编号:<a target="_blank" href="#">110105000501</a><br>   
+	            <span class="copyrightLink">Copyright © 2006-2016 <a href="http://www.zcool.com.cn" target="_blank">ZCOOL</a>
+	            </span>
+	            </dd>
+	        </dl>
+    	</div>
+    </div>
+    <!--goTop-->
+    <div id="goTop">
+    </div>
+</body>
+<script type="text/javascript" src="js/myscript.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

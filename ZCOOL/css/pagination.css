@@ -1,0 +1,18 @@
+@charset "utf-8"; 
+
+.pageList{
+	height:39px;
+}     
+.pageList a,.pageList span{
+	display: inline-block;
+    width:37px;height:37px;background: #f0f0f0;color:#7f7f7f;line-height: 37px;
+    text-align: center;border:1px solid #c1c1c1;border-radius: 4px;font-size:14px;margin-right:12px;cursor: pointer;
+}
+
+
+.pageList .current {
+   background: #ffba00;color:#fff;border:1px solid #eca128;
+}
+
+
+
