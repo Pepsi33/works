@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>list</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/list.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.pagination.js"></script>
+	<script type="text/javascript" src="js/list.js"></script>
+</head>
+<body>
+	<!--网页头部-->
+	<div class="headerWarp"></div>
+	<!--网页头部结束-->
+	<!--中间部分-->
+	<!--商品分类导航栏-->
+	<div class="listPageContent">
+		<div class="pageTitle clearfix" id="pageTitle">
+			<a href="#">全部</a>
+			<em></em>
+			<span>共<b>134092</b>件商品</span>
+			<!-- <a href="#" target="_blank" class="type">
+				<h1>包袋</h1>
+				<i></i>
+			</a>
+			<a href="#">斜挎包<span>&nbsp;></span></a> -->
+			<div class="typelist">
+				<ul class="clearfix">
+					<li><a href="#" target="_blank">包袋</a></li>
+					<li><a href="#" target="_blank">腕表</a></li>
+					<li><a href="#" target="_blank">服装鞋靴</a></li>
+					<li><a href="#" target="_blank">首饰</a></li>
+					<li><a href="#" target="_blank">美容护肤</a></li>
+					<li><a href="#" target="_blank">家居</a></li>
+					<li><a href="#" target="_blank">母婴玩具</a></li>
+					<li><a href="#" target="_blank">豪车</a></li>
+					<li><a href="#" target="_blank">飞机/游艇</a></li>
+					<li><a href="#" target="_blank">金银投资</a></li>
+					<li><a href="#" target="_blank">不动产</a></li>
+					<li><a href="#" target="_blank">工艺品</a></li>
+					<li><a href="#" target="_blank">户外运动</a></li>
+					<li><a href="#" target="_blank">生活方式</a></li>
+					<li><a href="#" target="_blank">配饰</a></li>
+					<li><a href="#" target="_blank">食品、酒类、生鲜</a></li>
+					<li><a href="#" target="_blank">营养保健</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="select" id="select">
+			<dl class="logo_dl">
+				<dt>品牌:</dt>
+				<dd>
+					<div class="smallList">
+						<ul class="showlogo">
+							<li><a href="#"><img src="images/listHtmlImg/logo (1).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (2).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (3).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (4).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (5).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (6).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (7).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (8).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (9).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (10).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (11).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (12).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (13).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (14).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (15).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (16).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (17).jpg"></a></li>
+							<li><a href="#"><img src="images/listHtmlImg/logo (18).jpg"></a></li>
+						</ul>
+						<a href="javascript:;" class="choice">更多</a>
+					</div>
+					<div class="bigList" style="display: none;">
+						<div class="search_brand">
+							<div class="brand_search_box">
+								<input type="text" >
+							</div>
+							<strong class="">所有品牌</strong>
+							<a href="javascript:;">A</a>
+							<a href="javascript:;">B</a>
+							<a href="javascript:;">C</a>
+							<a href="javascript:;">D</a>
+							<a href="javascript:;">E</a>
+							<a href="javascript:;">F</a>
+							<a href="javascript:;">G</a>
+							<a href="javascript:;">H</a>
+							<a href="javascript:;">I</a>
+							<a href="javascript:;">J</a>
+							<a href="javascript:;">K</a>
+							<a href="javascript:;">L</a>
+							<a href="javascript:;">M</a>
+							<a href="javascript:;">N</a>
+							<a href="javascript:;">O</a>
+							<a href="javascript:;">P</a>
+							<a href="javascript:;">Q</a>
+							<a href="javascript:;">R</a>
+							<a href="javascript:;">S</a>
+							<a href="javascript:;">T</a>
+							<a href="javascript:;">U</a>
+							<a href="javascript:;">V</a>
+							<a href="javascript:;">W</a>
+							<a href="javascript:;">X</a>
+							<a href="javascript:;">Y</a>
+							<a href="javascript:;">Z</a>
+							<a href="javascript:;">其他</a>
+						</div>
+						<div class="search_brand_list clearfix">
+							<ul class="showlogo">
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (1).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (2).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (3).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (4).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (5).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (6).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (7).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (8).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (9).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (10).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (11).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (12).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (13).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (14).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (15).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (16).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (17).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (18).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (8).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (9).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (10).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (11).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (12).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (13).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (14).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (15).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (16).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (17).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (18).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (1).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (2).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (3).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (4).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (5).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (6).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (7).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (8).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (9).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (10).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (11).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (12).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (13).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (14).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (15).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (16).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (17).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (10).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (11).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (12).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (13).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (14).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (15).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (16).jpg"></a></li>
+								<li><a href="javascript:;"><img src="images/listHtmlImg/logo (17).jpg"></a></li>
+							</ul>
+						</div>
+						<div class="search_brand_in" style="display: none;">
+							<span>已选品牌：</span>
+							<!-- <label><input class="the_select_val" type="checkbox" checked="">ARMANI COLLEZIONI</label> -->
+							<div class="brand_empty">清空</div>
+						</div>
+						<div class="search_brand_btn" style="display: none;">
+							<a href="javascript:;" class="brand_sub">确定</a>
+							<a href="javascript:;" class="brand_can">取消</a>
+						</div>
+					</div>
+					<a href="javascript:;" class="brandChoice" style="display: none;">收起</a>
+					<a href="javascript:;" class="brandmore" style="display: block;">多选<i></i></a>
+				</dd>
+			</dl>
+			<dl class="item_dl">
+				<dt>分类:</dt>
+				<dd>
+					<div class="smallList">
+						<a href="#">包袋<b>(26038)</b></a>
+						<a href="#">腕表<b>(6359)</b></a>
+						<a href="#">服装鞋靴<b>(44510)</b></a>
+						<a href="#">首饰<b>(13242)</b></a>
+						<a href="#">美容护肤<b>(2810)</b></a>
+						<a href="#">家居<b>(12165)</b></a>
+						<a href="#">母婴玩具<b>(2350)</b></a>
+						<a href="#">豪车<b>(2523)</b></a>
+						<a href="#">飞机/游艇<b>(86)</b></a>
+						<a href="#">不动产<b>(6)</b></a>
+						<a href="#">金银投资<b>(3)</b></a>
+						<a href="#">工艺品<b>(77)</b></a>
+						<a href="#">户外运动<b>(5023)</b></a>
+						<a href="#">生活方式<b>(144)</b></a>
+						<a href="#">配饰<b>(7783)</b></a>
+						<a href="#">食品、酒类、生鲜<b>(160)</b></a>
+						<a href="#">营养保健<b>(302)</b></a>
+					</div>
+				</dd>
+				<!-- <a href="javascript:;" class="choice">更多</a> -->
+			</dl>
+			<dl class="last">
+				<dt>价格:</dt>
+				<dd>
+					<div class="smallList">
+						<a href="#">300-2000</a>
+						<a href="#">2001-5000</a>
+						<a href="#">5001-10000</a>
+						<a href="#">10001-100000</a>
+						<a href="#">100001以上</a>
+					</div>
+				</dd>
+			</dl>
+			<dl class="nonCritical last" style="display: none;">
+				<dt>发货地:</dt>
+				<dd>
+					<div class="smallList">
+						<a href="javascript:;" title="大陆">大陆</a>
+						<a href="javascript:;" title="香港">香港</a>
+						<a href="javascript:;" title="美国">美国</a>
+						<a href="javascript:;" title="日本">日本</a>
+						<a href="javascript:;" title="韩国">韩国</a>
+						<a href="javascript:;" title="欧洲">欧洲</a>
+						<a href="javascript:;" title="韩国">澳洲</a>
+					</div>
+					<div class="search_brand_in" style="display: none;">
+						<span>已选发货地：</span>
+						<!-- <label><input class="the_select_val" type="checkbox" checked="">澳洲</label> -->
+						<div class="brand_empty">清空</div>
+					</div>
+					<div class="search_brand_btn" style="display: none;">
+						<a href="javascript:;" class="brand_sub">确定</a>
+						<a href="javascript:;" class="brand_can">取消</a>
+					</div>
+				</dd>
+				<a href="javascript:;" class="more">多选<i></i></a>
+			</dl>
+		</div>
+		<div class="control">
+			<a href="javascript:;" class="open">更多选项<i></i></a>
+			<a href="javascript:;" class="put" style="display: none;">收起<i></i></a>
+		</div>
+	</div><!--商品分类导航栏结束-->
+	<!--商品列表-->
+	<div class="product-box">
+		<div class="product-tips">
+			<a href="javascript:;" class="on">商城(123673)</a>
+			<a href="javascript:;">拍卖(10993)</a>
+		</div>
+		<div class="product-control">
+			<div class="btn">
+				<ul class="clearfix">
+					<li><a href="javascript:;" class="on">综合<i></i></a></li>
+					<li><a href="javascript:;">人气<i></i></a></li>
+					<li><a href="javascript:;">新品<i></i></a></li>
+					<li><a href="javascript:;">销量<i></i></a></li>
+					<li><a href="javascript:;">折扣<i></i></a></li>
+					<li><a href="javascript:;">价格<i class="p"></i></a></li>
+				</ul>
+			</div>
+			<div class="price">
+				<div class="">
+					<span>
+						<input type="text" id="customSPr" maxlength="10">
+					</span>
+					<i></i>
+					<span>
+						<input type="text" id="customEPr" maxlength="10">
+					</span>
+					<a href="javascript:;" class="empty">清空</a>	
+					<a href="javascript:;" class="enter">确定</a>
+				</div>
+			</div>
+			<div class="cheak">
+				<label><input type="checkbox" class="act">促销优惠</label>
+				<label><input type="checkbox" class="act">闪购</label>
+				<label><input type="checkbox" class="act">免税直邮</label>
+			</div>
+			<div class="search">
+				<input type="text" value="在结果中搜索">
+				<a href="javascript:;" class="goBtn">确定</a>
+			</div>
+			<div class="page">
+				<a href="javascript:;" class="prev"><</a>
+				<span><b>1</b>/3092</span>
+				<a href="javascript:;" class="next on">></a>
+			</div>
+		</div>
+		<!--商品列表-->
+		<div class="goodsList clearfix">
+		</div><!--商品列表结束-->
+		<!--翻页按钮-->
+		<div class="product-page">
+			<div class="pageWarp">
+				<div class="pagelist"></div>
+				<div class="npage">
+					共<i>3092</i>页，到第
+					<input type="text" class="assignPage" />&nbsp;页
+					<a href="javascript:;" class="assign">确定</a>
+				</div>
+			</div>
+		</div><!--翻页按钮结束-->
+		<!--最近浏览 畅销排行开始-->
+		<div class="product-more">
+			<dl>
+				<dt>
+					<a href="javascript:;" id="lastBrowse" class="hover">最近浏览</a>
+					<a href="javascript:;" id="lastBuy">畅销排行榜</a>
+				</dt>
+				<dd>
+					<ul class="clearfix">
+					</ul>
+				</dd>
+			</dl>
+		</div><!--最近浏览 畅销排行 end-->
+		<!--其他搜索项-->
+		<div class="search-like">
+			<p><span>你是不是想找:</span><a href="#">玛莎拉蒂手表</a></p>
+		</div>
+		<div class="bgf">
+			<div class="search-other clearfix">
+				<input type="text" placeholder="玛莎拉蒂" class="searchInput fl">
+				<input type="button" name="" value="搜索" class="searchBtn fl">
+			</div>
+		</div><!--其他搜索项结束-->
+	</div><!--中间部分结束-->
+	<!--底部评价-->
+	<div class="bt-feed">
+		<div class="bd">
+			<p class="feed-head clearfix">
+				<span class="fl">您对当前页面的结果是否满意？</span>
+				<a href="javascript:;">满意</a>
+				<a href="javascript:;">不满意</a>
+			</p>
+			<p class="feed-tips">（为了给您提供更好的服务，我们希望收集您使用搜索功能时的看法和建议。对于您的支持我们由衷感谢！）</p>
+			<span class="feed-close"></span>
+		</div>
+	</div><!--底部评价结束-->
+	<!--shopping Box-->
+	<div class="shbox">
+		<div class="shbox-title">
+			添加购物车成功
+			<a href="javascript:;" class="closebox"></a>
+		</div>
+		<div class="shbox-bd">
+			添加成功
+		</div>
+		<div class="shbox-btn">
+			<a href="shoppingCart.html" class="toCart" target="_blank">去购物车结算</a>
+			<a href="javascript:;" class="toBuy closebox">继续购物</a>
+		</div>
+	</div><!--shopping box end-->
+	<!--collect Box-->
+	<div class="clbox">
+		<div class="clbox-title">
+			收藏成功
+			<a href="javascript:;" class="closebox"></a>
+		</div>
+		<div class="clbox-bd">
+			收藏成功
+		</div>
+		<div class="clbox-btn">
+			<a href="javascript:;" class="myCollect">查看我的收藏>></a>
+		</div>
+	</div>
+	<!--backTop-->
+	<div class="goTop"></div><!--backTop  end-->
+	<!--网页尾部-->
+	<div class="footerWarp"></div>
+	<!--网页尾部结束-->
+</body>
+</html>

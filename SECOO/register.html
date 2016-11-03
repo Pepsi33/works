@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>寺库-注册</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/rgs_login_same.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+	<div class="register-header">
+		<div class="header clearfix">
+			<div class="headerLeft fl">
+				<img src="images/register/register_logo.jpg" alt="寺库网">
+			</div>
+			<div class="headerRight fr">
+				<a href="index.html">寺库首页</a>
+				<a href="#">收藏寺库</a>
+				<a href="#">寺库APP</a>
+			</div>
+		</div>
+	</div><!--头部结束-->
+	<!--中间部分开始-->
+	<div class="bgColor">
+		<div class="box clearfix">
+			<div class="reg-box fr">
+				<div class="tab_phone">
+					<ul class="clearfix">
+						<!--用户名-->
+						<li class="clearfix">
+							<div class="regtips clearfix">
+								<span class="t_left">用户名</span>
+								<span class="regNameTips tips" style="display: none;">请输入您的手机号</span>
+							</div>
+							<div class="nameInputBox">
+								<input type="text" class="userNameInput input">
+							</div>
+							<div class="autoShow" style="display: none;">
+								<ul class="list">
+								</ul>
+							</div>
+						</li><!--用户名部分结束-->
+						<!--验证码-->
+						<li class="clearfix">
+							<div class="regtips clearfix">
+								<span class="t_left">验证码</span>
+							</div>
+							<div class="regCode clearfix">
+								<input type="text" class="codeInput regInput">
+								<span class="codeImg"></span>
+								<a href="javascript:;" class="cgBtn">换一换</a>
+							</div>
+						</li><!--验证码部分结束-->
+						<!--短信验证码-->
+						<li class="clearfix">
+							<div class="phoneNumberCode clearfix">
+								<input type="text" class="dxCodeInput regInput">
+								<input type="button" class="getCode" value="获取短信验证码">
+							</div>
+						</li><!--短信验证码结束-->
+						<!--密码部分开始-->
+						<li class="clearfix">
+							<div class="regtips clearfix">
+								<span class="t_left">密码</span>
+								<span class="regPassWordTips tips" style="display: none;">请输入密码</span>
+							</div>
+							<div class="passWordInputBox">
+								<input type="password" class="passWordInput input">
+							</div>
+						</li>
+						<!--密码部分结束-->
+						<!--确认密码部分开始-->
+						<li class="clearfix">
+							<div class="regtips clearfix">
+								<span class="t_left">确认密码</span>
+								<span class="regPassWordTips tips" style="display: none;">请输入确认密码</span>
+							</div>
+							<div class="cheakPassWordBox">
+								<input type="password" class="cheakPassWord  input">
+							</div>
+						</li>
+						<!--确认密码部分结束-->
+					</ul>
+				</div>
+				<!--提交部分开始-->
+				<div class="submitBox">
+					<div class="regtips clearfix">
+						<span class="t_left"><input type="checkbox" class="guibin" >贵宾邀请码</span>
+						<span class="regguibinTips tips"></span>
+					</div>
+					<input type="text" class="guibinCodeInput input" style="display: none;">
+					<div class="msaTips" ></div>
+					<input type="button" value="立即注册" id="registerBtn" class="registerBtn">
+					<p>
+						<label><input type="checkbox" checked="checked" id="readProtocol">
+							我已阅读并同意
+							<a href="#">《寺库网用户注册协议》</a>
+						</label>
+					</p>
+					<div class="regtips clearfix">
+						<span class="t_left tk tips" style="display: none;">请接受服务条款</span>
+					</div>
+					<p>已经是寺库会员？<a href="#" class="lg">点击登录</a></p>
+				</div>
+			</div>
+		</div>
+	</div><!--中间部分结束-->
+	<!--网页尾部-->
+	<div class="footer">
+		<div class="service clearfix" style="background: none;">
+			<dl class="first">
+				<dt><strong>新手指南</strong></dt>
+				<dd><a href="#">注册新用户</a></dd>
+				<dd><a href="#">网上订购流程</a></dd>
+				<dd><a href="#">优惠券使用说明</a></dd>
+				<dd><a href="#">海外站购买说明</a></dd>
+				<dd><a href="#">美国站购买说明</a></dd>
+			</dl>
+			<dl>
+				<dt><strong>付款方式</strong></dt>
+				<dd><a href="#">在线支付</a></dd>
+				<dd><a href="#">库支付</a></dd>
+				<dd><a href="#">银行汇款</a></dd>
+				<dd><a href="#">货到付款</a></dd>
+			</dl>
+			<dl>
+				<dt><strong>物流配送</strong></dt>
+				<dd><a href="#">管家配送</a></dd>
+				<dd><a href="#">快递配送</a></dd>
+				<dd><a href="#">到店自提</a></dd>
+				<dd><a href="#">配送范围及时间</a></dd>
+				<dd><a href="#">配送政策</a></dd>
+			</dl>
+			<dl>
+				<dt><strong>售后服务</strong></dt>
+				<dd><a href="#">退换货说明</a></dd>
+				<dd><a href="#">如何办理退款</a></dd>
+				<dd><a href="#">售后服务保养手册</a></dd>
+				<dd><a href="#">奢侈品养护服务</a></dd>
+				<dd><a href="#">奢侈品拍卖置换</a></dd>
+			</dl>
+			<dl class="last">
+				<dt><strong>跨境体验店</strong></dt>
+				<dd><p>寺库通过在全球多地设立体验店和办事机构的方式，为高端消费者提供贴心的全球奢侈品一站式服务</p></dd>
+				<dd><a href="#" class="mr65">北京</a><a href="#">香港</a></dd>
+				<dd><a href="#" class="mr65">上海</a><a href="#">米兰</a></dd>
+				<dd><a href="#">成都</a></dd>
+			</dl>
+		</div>
+		<div class="footer-nav">
+			<div class="bd">
+				<ul class="clearfix">
+					<li>
+						<i class="fn1"></i>100%正品
+					</li>
+					<li>
+						<i class="fn2"></i>保证7天退换货
+					</li>
+					<li>
+						<i class="fn3"></i>专业维修保养
+					</li>
+					<li>
+						<i class="fn4"></i>权威奢侈品鉴定
+					</li>
+					<li>
+						<i class="fn5"></i>贴心管家物流
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-about clearfix">
+			<div class="about-bd clearfix">
+				<p class="links clearfix">
+					<a href="#">寺库网</a>
+					<a href="#">寺库奢侈品养护</a>
+					<a href="#">寺库招商</a>
+					<a href="#">寺库加盟店</a>
+				</p>
+				<p class="links clearfix">
+					<a href="#">加入寺库</a>
+					<a href="#">联系我们</a>
+					<a href="#">关于寺库</a>
+					<a href="#">寺库微博</a>
+					<a href="#">友情链接</a>
+					<a href="#">奢侈品热词</a>
+					<a href="#">奢侈品资讯</a>
+				</p>
+				<p class="copyright pb14 clearfix">
+					<span>营业执照注册号110102011888762</span>
+					<span><a href="#">京公安备11010102001392</a></span>
+					<span>京ICP证110119号 </span>	
+				</p>
+				<p class="copyright pb11 clearfix">
+					<span>京ICP备09084709号-3</span>
+					<span>ISO9001中国质量管理体系认证</span>
+				</p>
+				<p class="authentication">
+					<a href="#"><img src="images/f_01.jpg" alt=""></a>
+					<a href="#"><img src="images/f_04.jpg" alt=""></a>
+					<a href="#"><img src="images/f_02.png" alt=""></a>
+					<a href="#"><img src="images/kexin.jpg" alt=""></a>
+					<a href="#"><img src="images/f_03.jpg" alt=""></a>
+				</p>
+				<ul class="ewm clearfix">
+					<!-- <li>
+						<img src="images/app_ewm0827.jpg" alt="">
+						<p>手机客户端</p>
+					</li>
+					<li>
+						<img src="images/sk_ewm0827.jpg" alt="">
+						<p>官方微信</p>
+					</li> -->
+					<li>
+						<p>寺库APP</p>
+						<img src="images/app_ewm0827.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--网页尾部结束-->
+</body>
+</html>

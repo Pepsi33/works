@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的购物车</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/shoppingCart.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/shoppingCart.js"></script>
+</head>
+<body>
+	<!--header-->
+	<div class="carHeader">
+		<div class="headerCon clearfix">
+			<div class="logo fl">
+				<a href="index.html" target="_blank">
+					<img src="images/logo.png">
+				</a>
+			</div>
+			<div class="fr">
+				<img src="images/c_05.jpg">
+			</div>
+		</div>
+	</div><!--header end-->
+	<!--content-->
+	<div class="center">
+		<div class="centerBox">
+			<!--空购物车-->
+			<div class="nullCart">
+				<div class="nullText">
+	        		<p class="cText01">购物车内暂时没有商品，您可以：</p>
+	        		<p class="cText02"><a href="index.html" class="a02">返回首页挑选商品</a></p>
+	      		</div>
+	    	</div>
+	    	<!--非空购物车-->
+			<div class="cart">
+				<!--商品导航信息-->
+				<div class="cartNav clearfix">
+			      <div class="fl navLogin" style="">
+			      		<a href="myCart.html" class="userName" target="_blank"></a>
+						<a href="javascript:;" class="laout">退出</a>
+				  </div>
+				  <div class="noLogin fl">
+				  	<p>现在<a href="login.html" class="login" target="_blank">登录</a>您的购物车将永久被保留</p>
+				  </div>
+	    		</div><!--商品导航信息   end-->
+	    		<!--商品列表-->
+	    		<div class="cartList">
+	    			<table class="cartTable" cellspacing="0" border="0" cellpadding="0">
+	    				<thead>
+	    					<tr>
+	    						<th width="75">
+									<input type="checkbox" class="choseAll" id="choseAll">
+									<label for="choseAll">全选</label>
+	    						</th>
+								<th width="355" colspan="2">商品名称</th>
+								<th width="96">发货站</th>
+								<th width="96">会员价</th>
+								<th width="140">数量</th>
+								<th width="110">金额小计</th>
+								<th width="110">操作</th>
+	    					</tr>
+	    				</thead>
+	    				<tbody>
+	    				</tbody>
+	    			</table>
+	    		</div><!--商品列表  end-->
+	    		<!--商品结算-->
+	    		<div class="cartPrice">
+	    			<div class="cartAllno">
+	    				<div class="an01 fl">
+	    					<input type="checkbox" class="choseAll" id="choseAll">
+							<label for="choseAll">全选</label>
+	    				</div>
+						<div class="delSp fl">
+	    					<a href="javascript:;">删除选中商品</a>
+	    				</div>
+	    			</div>
+	    			<p>商品数量总计：0件</p>
+	    			<p>包装数量总计：0件</p>
+	    			<p>返利库币：0库币</p>
+	    			<p class="totalPrice">商品金额总计（不含运费）：<span class="rmb"></span><strong>0</strong></p>
+	    			<p class="clearfix">
+						<a href="http://www.secoo.com" class="fl a01" target="_blank">继续购物</a>
+						<a href="javascript:;" class="fr a02 a02dis settle">立即结算</a>
+					</p>
+					<!--删除弹出层-->
+					<div class="cartPop01">
+						<span class="close">×</span>
+						<div class="arrow"><p class="bg"></p></div>
+						<div class="popContent">
+				        	<h3 class="clearfix">删除商品</h3>
+				            <div class="popText">确定要删除宝宝吗？</div>
+				            <div class="cbtns">
+								<a href="javascript:;" class="cbtn01">确定</a>
+								<a href="javascript:;" class="cbtn02 close">取消</a>
+							</div>
+		        		</div>	
+					</div><!--删除弹出层  end-->
+	    		</div><!--商品结算   end-->
+			</div><!--非空购物车   end-->
+		</div>
+		<div style="width: 990px;margin:0 auto;">
+			<div class="carSmsg">
+				<a href="javascript:;" class="sprev"></a>
+				<a href="javascript:;" class="snext"></a>
+				<h3>猜你喜欢</h3>
+				<div class="list01">
+					<div class="carousel01">
+						<ul class="clearfix">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="carSmsg" style="margin-top: 30px;">
+				<a href="javascript:;" class="sprev02" style="display: none;"></a>
+				<a href="javascript:;" class="snext02" style="display: none;"></a>
+				<h3>最近浏览</h3>
+				<div class="list01">
+					<div class="carousel02">
+						<ul class="clearfix">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--content  end-->
+	<!--footer-->
+	<div class="footer">
+		<div class="footerListTop">
+			<div class="listTopCon">
+				<div class="listTop01 fl">
+					<ul class="clearfix">
+						<li><a href="#" target="_blank"></a>
+							<div class="topIconBg">
+								<p class="i01 pngfix">正品保障</p>
+								<p class="i02 pngfix"></p>
+							</div>
+							<p class="text">正品保障</p>
+						</li>
+						<li class="hr"></li>
+						<li><a href="#" target="_blank"></a>
+							<div class="topIconBg">
+								<p class="i01 pngfix" style="background-position: -91px -1px;">7天退修</p>
+								<p class="i02 pngfix" style="background-position: -91px -89px;"></p>
+							</div>
+							<p class="text">7天退修</p>
+						</li>
+						<li class="hr"></li>
+						<li><a href="#" target="_blank"></a>
+							<div class="topIconBg">
+								<p class="i01 pngfix" style="background-position: -180px -1px;">维修保养</p>
+								<p class="i02 pngfix" style="background-position: -180px -89px;"></p>
+							</div>
+							<p class="text">维修保养</p>
+						</li>
+						<li class="hr"></li>
+						<li><a href="#" target="_blank"></a>
+							<div class="topIconBg">
+								<p class="i01 pngfix" style="background-position: -270px -1px;">权威鉴定</p>
+								<p class="i02 pngfix" style="background-position: -270px -89px;"></p>
+							</div>
+							<p class="text">权威鉴定</p>
+						</li>
+						<li class="hr"></li>
+						<li><a href="#" target="_blank"></a>
+							<div class="topIconBg">
+								<p class="i01 pngfix" style="background-position: -358px -1px;">管家服务</p>
+								<p class="i02 pngfix" style="background-position: -358px -89px;"></p>
+							</div>
+							<p class="text">管家服务</p>
+						</li>
+					</ul>
+				</div>
+				<div class="listTop02 fl">
+					<ul class="clearfix">
+						<li>
+							<a href="#" class="tptext">关注寺库微信</a>
+							<span>
+								<img src="images/weixin.jpg" alt="寺库微信">
+							</span>
+							<a href="#" class="bttext">扫一扫有惊喜</a>
+						</li>
+						<li>
+							<a href="#" class="tptext">下载寺库app</a>
+							<span>
+								<img src="images/app.jpg" alt="寺库app">
+							</span>
+							<a href="#" class="bttext">扫一扫有惊喜</a>
+						</li>
+					</ul>
+				</div>
+				<div class="listTop03 fl">
+					<ul class="list03Left fl">
+						<li><a href="#">加入寺库</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">帮助中心</a></li>
+						<li><a href="#">免责声明</a></li>
+						<li><a href="#">寺库微博</a></li>
+					</ul>
+					<ul class="list03Right fr">
+						<li><a href="#">关于寺库</a></li>
+						<li><a href="#">支付方式</a></li>
+						<li><a href="#">售后服务</a></li>
+						<li><a href="#">礼品采购</a></li>
+						<li><a href="#">友情链接</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footerListBottom">
+			<div class="footerBt01">
+				<span>京ICP备09084709号-3 京公网安备110105004373号</span>
+				<a href="#"><img src="images/foot_pic01.png" alt=""></a>
+				<a href="#"><img src="images/foot_pic02.png" alt=""></a>
+				<a href="#"><img src="images/gongshangju.png" alt=""></a>
+			</div>
+		</div>
+	</div><!--footer  end-->
+	<!--backTop-->
+	<div class="backTop">
+		<a href="javascript:;">回到顶部</a>
+	</div><!--backTop-->
+</body>
+</html>

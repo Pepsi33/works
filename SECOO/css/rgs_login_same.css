@@ -1,0 +1,140 @@
+
+/*****寺库注册页面和登录页面共同样式表*****/
+
+body{
+	background:#fdf8f4 url(../images/register/bgImg.jpg) no-repeat center;
+}
+	/**头部**/
+.register-header{
+	width:100%;height:70px;background:#000;opacity: .8;
+}
+.register-header .header{
+	width:1200px;height:70px;margin:0 auto;
+}
+.header .headerRight a{
+	display: inline-block;height: 70px;line-height: 70px;padding:0 10px;
+}
+.header .headerRight a:hover{
+	color: #c69c6d;
+}
+
+	/**中间部分**/
+.bgColor{
+	padding:30px 0;
+}
+.bgColor .box{
+	width:1200px;height:720px;margin:0 auto;
+}
+
+
+/****网页尾部***/
+.footer{
+	width: 100%;background-color: #fff;box-shadow: 1px 0 3px rgba(240,234,237,.3);position: relative;
+}
+.footer .service{
+	width:1200px;margin:0 auto;padding:28px 0 25px;background: url(../images/foot_svbg.jpg) no-repeat 768px -7px;
+}
+.service dl{
+	width:172px;float:left;height: 148px;
+}
+.service dl.first{
+	padding-left: 10px;
+}
+.service dl dt{
+	padding:6px 0 11px;font-size: 12px;
+}
+.service dl dd a{
+	line-height: 21px;display: block;
+}
+.service dl.last{
+	width:336px;
+}
+.service dl.last a{
+	display: inline-block;
+}
+.service dl.last p{
+	font-size: 14px;margin-bottom: 10px;
+}
+.service dl.last .mr65{
+	margin-right: 65px;
+}
+
+.footer-nav {
+    width: 100%;height: 23px;background: #463b7f;color: #f5f5f5;padding: 9px 0 7px;
+}
+.footer-nav .bd{
+	width:1200px;margin:0 auto;
+}
+.footer-nav .bd ul li{
+	float:left;padding-left:105px;font-size:14px;line-height:23px;
+}
+.footer-nav .bd ul li i{
+	background: url(../images/p_04.png) no-repeat;height: 23px;
+	display:inline-block;margin-right: 5px;vertical-align: middle;
+    position: relative;top: -2px;
+}
+.footer-nav .bd ul li i.fn1{
+	width:22px;background-position: 0 0;
+}
+.footer-nav .bd ul li i.fn2{
+	width:16px;background-position: -29px 0;
+}
+.footer-nav .bd ul li i.fn3{
+	width:26px;background-position: -49px 0;
+}
+.footer-nav .bd ul li i.fn4{
+	width:18px;background-position: -83px 0;
+}
+.footer-nav .bd ul li i.fn5{
+	width:27px;background-position: -104px 0;
+}
+
+.footer-about{
+	padding:22px 0 12px;-background: #f5f5f5;
+}
+.footer-about .about-bd{
+	width:1200px;margin:0 auto;position: relative;
+}
+.footer-about .about-bd .links{
+	padding-bottom: 16px;text-align: center;
+}
+.footer-about .about-bd .links a{
+	padding:0 5px;display: inline;color: #333;
+}
+.footer-about .about-bd .copyright{
+	text-align: left;color: #999;text-align: center;
+}
+.footer-about .about-bd .copyright span{
+	padding:0 5px;height:20px;line-height: 20px;display: inline;
+}
+.footer-about .about-bd .pb14{
+	padding-bottom: 14px;
+}
+.footer-about .about-bd .pb11{
+	padding-bottom: 11px;
+}
+.footer-about .about-bd .copyright span a{
+	display: inline-block;text-decoration: none;height: 20px;line-height: 20px;
+    color: #999;
+}
+.footer-about .about-bd .authentication{
+	margin-top:3px;float:left;padding:0 10px;text-align: center;width:100%;
+}
+.footer-about .about-bd .authentication a{
+	padding:0 5px;display: inline;
+}
+.footer-about .about-bd .authentication a img{
+	width:108px;height:40px;display: inline;
+}
+
+
+
+.footer-about .about-bd ul.ewm{
+	position: absolute;top: -245px;right:10px;
+}
+.footer-about .about-bd ul.ewm li{
+	float: left;padding-right: 20px;
+}
+.footer-about .about-bd ul.ewm li p{
+	padding:10px 0 0;color: #333;text-align: center;
+}

@@ -1,0 +1,178 @@
+
+/****
+
+		myCart(我的订单)页面样式表
+	
+****/
+
+body{
+	background: #ededed;
+}
+
+
+/***左边菜单栏***/
+.mySecooNew{
+	width:1200px;margin:40px auto 60px;
+}
+.mySecooNew .left{
+	width:180px;border-top:3px solid #7f69b2;background: #fff;
+	cursor: pointer;z-index: 2;position: relative;float: left;
+}
+.mySecooNew .left h2{
+	padding:24px 0 14px;margin:0 25px;
+}
+.mySecooNew .left h2 a{
+	font: 18px/20px "microsoft yahei";color: #000;
+	padding-left: 15px;
+}
+.mySecooNew .left dl{
+	padding-bottom: 6px;
+}
+.mySecooNew .left dl dt{
+	font: 14px/20px "microsoft yahei";
+    color: #000000;
+    padding: 12px 25px 7px;
+}
+.mySecooNew .left dl dd{
+	line-height: 32px;color: #888;
+}
+.mySecooNew .left dl dd a{
+	padding: 0px 25px 0px 40px; display: block;color: #666;
+	background: url(../images/myCart/mySecoo.png) no-repeat 25px -29px;
+}
+.mySecooNew .left dl dd:not(.on):hover a{
+	text-decoration: underline;color:#7f69b2; 
+}
+.mySecooNew .left dl dd.on a{
+	color: #fff;background:#7f69b2 url(../images/myCart/mySecoo.png) no-repeat 25px -29px;font-weight: bold;
+}
+
+
+/****右边菜单栏****/
+.right{
+	width:970px;float:right;
+}
+.right .selectHt{
+	width:100%;height:30px;position: relative;
+}
+.right .selectHt ul.orederTabs li{
+	padding:0 47px;height: 30px;line-height: 30px;
+	color:#fff;background:#333;float: left;margin-right: 1px;
+	cursor: pointer;font-size: 12px;
+}
+.right .selectHt ul.orederTabs li:hover{
+	background: #7f69b2;
+}
+/*鼠标点击变换类名*/
+.right .selectHt ul.orederTabs li.on{
+	background: #7f69b2; 
+}
+.order-info{
+	background: #fff;padding: 40px;
+    box-shadow: 0px 2px 3px #e2e2e2;
+    margin-bottom: 20px;
+}
+.order-info .order-info-zt{
+	height: 22px;margin-bottom: 24px;
+}
+.order-info .order-info-zt a{
+	display: block;height: 22px;font-size:16px;line-height: 16px;
+	color: #333;margin-right: 80px;cursor: pointer;
+	border:2px solid #fff;float: left;
+}
+.order-info .order-info-zt a em{
+	color: #e93b39;margin-left: 5px;
+}
+.order-info .order-info-ss #queryKey{
+	width:220px;height: 18px;line-height: 18px;padding:5px 10px;
+	border:1px solid #dbdbdb;color: #ccc;float: left;
+}
+.order-info .order-info-ss #query-btn{
+	width:80px;height:30px;border:none;background: #e93b39;
+	text-align: center;line-height: 30px;color: #fff;
+	cursor: pointer;vertical-align: top;float: left;
+}
+.order-info .order-info-ss a.dd-select{
+	margin-left: 10px;height: 30px;line-height: 30px;
+    display: inline-block;color: #333;cursor: pointer;
+    padding-right: 24px;vertical-align: top;float: left;
+    background: url(../images/myCart/mySecoo.png) no-repeat right -130px;
+}
+
+.order-info .order-info-ss a.on{
+	background-position: right -180px;
+}
+
+.order-info .order-info-cx{
+	height:30px;margin-top:20px;
+}
+.order-info .order-info-cx label{
+	line-height: 30px;float: left;padding-right: 8px;
+}
+.select-box{
+	width:150px;height:30px;margin-right:52px;float:left;
+	position: relative;z-index: 999;cursor: pointer;
+}
+.select-box .select_x{
+	border: 1px solid #dbdbdb;width: 116px;height: 28px;
+    line-height: 28px;padding: 0px 22px 0px 10px;
+    color: #333;background: url(../images/myCart/mySecoo.png) no-repeat 130px -180px;
+}
+
+/*鼠标划入变换的类名*/
+.select-box .select_x.on{
+	background-position: 130px -130px;border:1px solid #7f69b3;
+}
+
+.select-box .select_c{
+	position: absolute;left: 0;top: 28px;width: 148px;
+    background: #fff;border: 1px solid #7f69b3;border-top: none;
+    display: none;
+}
+
+.select-box .select_c li{
+	padding:0 10px;height:20px;line-height: 20px;
+	color: #333;text-align: left;
+}
+.select-box .select_c li:hover{
+	background: #7f69b3;color: #fff;
+}
+
+
+/***商品表格***/
+.order-table{
+	width:100%;table-layout: fixed;border-collapse: collapse;
+    border-spacing: 0;
+}
+.order-table thead{
+	background: #7f69b3;
+}
+.order-table thead tr th{
+    height: 40px;color: #fff;font-weight: normal;padding: 0 15px;
+    text-align: center;
+}
+.order-table thead .select-box1{
+	width:80px;margin-right: 0;
+}
+.order-table thead .select-box1 .select_x{
+	width: 59px;color: #fff;border: 1px solid #7f69b3;
+	background: url(../images/myCart/mySecoo.png) no-repeat;
+    background-position: right -814px;padding: 0px 15px 0px 6px;
+}
+.order-table thead .select-box1 .select_c{
+	width:80px;
+}
+.order-table tbody{
+	background: #fff;
+    border-top: 1px solid #e2e2e2;
+}
+.order-table tbody tr td {
+    padding: 20px 15px;color: #000;font-weight: bold;
+    border-right: 1px solid #ededed;font-size: 14px;
+    border-bottom: 1px solid #ededed;
+    text-align: center;
+    vertical-align: top;
+}
+.order-table tbody tr td a{
+	color: #333;font-size: 12px;
+}

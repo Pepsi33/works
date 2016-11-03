@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的账户</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/myOrder.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/myOrder.js"></script>
+</head>
+<body>
+	<!--网页头部-->
+	<div class="headerWarp"></div>
+	<!--网页头部结束-->
+	<!--网页中部-->
+	<div class="mySecooNew" style="height: 866px;background: #fff;">
+		<!--左边菜单栏开始-->
+		<div class="left">
+			<h2><a href="#">我的寺库</a></h2>
+			<dl>
+				<dt>我是买家</dt>
+				<dd class="on"><a href="#">我的订单</a></dd>
+				<dd><a href="#">豪车订单</a></dd>
+				<dd><a href="#">我的预定订单</a></dd>
+				<dd><a href="#">我的拍卖</a></dd>
+				<dd><a href="#">我的收藏</a></dd>
+				<dd><a href="#">商品评价</a></dd>
+				<dd><a href="#">我的售后</a></dd>
+			</dl>
+			<dl>
+				<dt>我是卖家</dt>
+				<dd><a href="#">我的在线申请</a></dd>
+				<dd><a href="#">我的售卖商品</a></dd>
+				<dd><a href="#">我的售卖结算</a></dd>
+				<dd><a href="#">售卖信息变更</a></dd>
+				<dd><a href="#">发布售卖信息</a></dd>
+			</dl>
+			<dl>
+				<dt>账号中心</dt>
+				<dd><a href="#">账户信息</a></dd>
+				<dd><a href="#">账户安全</a></dd>
+				<dd><a href="#">优惠券</a></dd>
+				<dd><a href="#">收货地址</a></dd>
+			</dl>
+			<dl>
+				<dt>我的租赁</dt>
+				<dd><a href="#">租赁商品管理</a></dd>
+			</dl>
+		</div><!--左边菜单栏结束-->
+		<!--右边菜单栏结束-->
+		<div class="right">
+			<div class="selectHt">
+				<ul class="orederTabs clearfix">
+					<li class="orederTabs1 on">网站订单</li>
+					<li class="orederTabs2">门店订单</li>
+				</ul>
+			</div>
+			<div class="order-info">
+				<div class="order-info-zt">
+					<a id="waitpa">待付款<em id="waitPay">（0）</em></a>
+					<a id="waitDeli">待发货<em id="waitDeliver">（0）</em></a>
+					<a id="waitrec" style="cursor:pointer">待收货<em id="waitReceipt">（0）</em></a>
+				</div>
+				<div class="order-info-ss clearfix">
+					<input type="text" name="queryKey" id="queryKey" placeholder="请输入商品标题/订单编号进行搜索">
+					<input type="button" class="query-btn" id="query-btn" value="搜索">
+					<a href="javascript:;" class="dd-select">精简筛选条件</a>
+				</div>
+				<div class="order-info-cx">
+					<label>下单日期:</label>
+					<div class="select-box">
+						<div class="select_x">三个月内</div>
+						<ul class="select_c">
+							<li>三个月内</li>
+							<li>2016</li>
+							<li>2015</li>
+							<li>2014</li>
+							<li>2014之前</li>
+						</ul>
+					</div>
+					<label>售后服务:</label>
+					<div class="select-box">
+						<div class="select_x"></div>
+						<ul class="select_c">
+							<li>申请退货</li>
+							<li>退货中</li>
+							<li>2退货完成</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="order-table order-table_md" id="order-info">
+	        <colgroup>
+              	<col class="goods" style="width:40%;">
+              	<col class="price" style="width:13%;">
+              	<col class="quantity" style="width:10%;">
+              	<col class="item-operate" style="width:12%;">
+             	<col class="amount" style="width:12%;">
+              	<col class="trade-status" style="width:13%;">
+              	<col class="trade-operate" style="width:13%;">
+	        </colgroup>
+	        <thead id="thheadId">
+	              
+	        	<tr>
+	           		<th scope="col">商品</th>
+	           		<th class="alignleft" scope="col">单价</th>
+	           		<th scope="col">数量</th><th scope="col">商品操作</th>
+	           		<th scope="col">实付款</th>
+	           		<th scope="col">
+	           			<div class="select-box select-box1">
+	           				<div class="select_x">订单状态</div>
+	           				<ul class="select_c">
+	           					<li class="daifukuan">待付款</li>
+	           					<li class="peihuozhong">配货中</li>
+	           					<li class="yifahuo">已发货</li>
+	           					<li class="yiquxiao">已取消</li>
+	           					<li class="yiwancheng">已完成</li>
+	           				</ul>
+	           			</div>
+	           		</th>
+	           		<th scope="col">操作</th>
+	           	</tr>
+	        </thead>
+	        <tbody class="">
+	        	<tr class="last_tr">
+	        		<td class="lasst_td_b last_td_r" colspan="7">暂无订单，这就去挑选商品：<a href="index.html">商城首页</a>
+	        		</td>
+	        	</tr>
+	        </tbody>
+	    </table>
+		</div><!--右边菜单栏结束-->
+	</div>
+	<!--网页中部结束-->
+	<!--网页尾部-->
+	<div class="footerWarp"></div>
+	<!--网页尾部结束-->
+</body>
+</html>

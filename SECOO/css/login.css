@@ -1,0 +1,139 @@
+.bgColor .box .login-box{
+	width:310px;padding:30px 35px;margin-top: 80px;background: #fff;
+	position: relative;
+}
+.bgColor .box .login-box input{
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+}
+
+.bgColor .box .login-box input:focus{
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .075),0 0 5px rgba(240, 127, 5, .4);
+	transition: border linear .2s, box-shadow linear .2s;
+}
+
+.login-box ul li h1{
+	color: #f19108;font: normal 20px/20px microsoft yahei;text-align: center;
+    margin-bottom: 24px;font-weight: bold;
+}
+
+.login-box ul li{
+	width: 310px;margin-bottom: 15px;
+}
+
+	/*错误信息提示*/
+.login-box .error_msg{
+	height: auto;
+    border: 1px solid #ffac76;
+    background: #ffffcf url(../images/login/error.jpg) no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    line-height: 25px;
+    color: #ff0200;
+    font-weight: bold;
+}
+
+	/***用户名部分***/
+.login-box .userNameBox{
+	position: relative;
+}
+.login-box .userNameBox label{
+	position: absolute;top:0;left:5px;height: 50px;line-height: 50px;color: #999;
+	cursor: text;
+}
+
+.login-box .userNameBox .userName{
+	width:298px;height: 20px;line-height: 20px;padding:14px 5px;font-size: 14px;
+	color: #333;font-weight: bold;border:1px solid #dedede;
+}
+.login-box .userNameBox i{
+	width:15px;height:17px;position: absolute;top:16px;right:10px;
+	background: url(../images/login/login.jpg) no-repeat 0 0;
+}
+.login-box .userNameBox i.picUser{
+	background-position: -19px 0;
+}
+/***用户名部分结束***/
+
+	/***密码部分***/
+.login-box .passwordBox{
+	position: relative;
+}
+.login-box .passwordBox label{
+	position: absolute;top:0;left:5px;height: 50px;line-height: 50px;color: #999;
+	cursor: text;
+}
+
+.login-box .passwordBox .password{
+	width:298px;height: 20px;line-height: 20px;padding:14px 5px;font-size: 14px;
+	color: #333;font-weight: bold;border:1px solid #dedede;
+}
+.login-box .passwordBox i{
+	width:15px;height:17px;position: absolute;top:16px;right:10px;
+	background: url(../images/login/login.jpg) no-repeat 0 -20px;
+}
+.login-box .passwordBox i.picPassword{
+		background-position: -19px -20px;
+}
+
+/***密码部分结束***/
+
+
+/**验证码**/
+.regCode{
+	width：100%；
+}
+.yzm{
+	height:20px;line-height: 20px;display: block;color: #666;padding-bottom: 4px;
+}
+.regCode .codeInput{
+	width:115px;color: #333;font-family: 'microsoft yahei';
+	height:28px;padding:10px 5px;line-height: 28px;
+	border:1px solid #dedede;float:left;font-weight: bold;
+}
+
+.regCode span{
+	width:80px;height:37px;display: inline-block;
+	margin:5px 0 0 9px;float: left;background: #333;color: #fff;font-size: 20px;
+	text-align: center;line-height: 37px;opacity: .7
+}
+.regCode a{
+	height: 20px;line-height: 20px;padding:10px 0 0 10px;display: inline-block;float: left;
+}
+.regCode a:hover{
+	color: #000;
+}
+/**验证码结束**/
+
+
+	/***登录按钮***/
+.submitBox{
+		padding: 9px 0 8px 0;
+}
+.submitBox  #LoginBtn{
+	width:100%;background: #f19108;cursor: pointer;height:50px;line-height: 50px;
+	font-size: 16px;color: #fff;text-align: center;font-weight: bold;
+}
+
+	/***合作网站账号登录***/
+.jiathis{
+	padding-bottom: 30px;
+}
+.jiathis p{
+	padding: 5px 0;color: #999;
+	height:20px;
+}
+.jiathis p img{
+	cursor: pointer;display: inline-block;
+}
+
+	/***Msg***/
+.msg p{
+	height: 15px;line-height: 15px;color: #999
+}
+.msg .fl a{
+	color:#f19108;cursor: pointer;
+}
+.msg .fr a{
+	color:#666;cursor: pointer;
+}
+.msg .fr a:hover{color:#9c003f;}

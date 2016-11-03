@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>item</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/item.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/item.js"></script>
+</head>
+<body>
+	<!--网页头部-->
+	<div class="headerWarp"></div><!--网页头部结束-->
+	<!--中间部分-->
+	<div class="main">
+		<!--nav-->
+		<div class="smallNav">
+			<p>
+				<a href="index.html" target="_blank">首页</a>&gt;
+			</p>
+		</div><!--nav  end-->
+		<!--content-->
+		<div class="content clearfix">
+			<div class="info-left">
+				<dl id="imgshow" class="clearfix">
+					<dd>
+						<!-- <a href="javascript:;" class="on">
+							<img src="images/smallImg.jpg" style="width: 80px;height: 80px;" />
+							<i></i>
+						</a> -->
+					</dd>
+					<dt>
+						<img src="" style="width: 400px;height:400px;" />
+						<div class="zoomspan"></div><!--放大镜-->
+						<div class="zoomdiv">
+							<img class="bigImg" src="" alt="">
+						</div>
+					</dt>
+				</dl>
+				<ul class="share clearfix">
+					<li class="sh1"><i></i><a href="#">正品保障</a></li>
+					<li class="sh2"><i></i><a href="#">七天退换</a></li>
+					<li class="sh3"><i></i><a href="#">权威质检</a></li>
+					<li class="sh4"><i></i><a href="#">分享</a></li>
+					<li class="sh5"><i></i><a href="#">收藏商品</a></li>
+				</ul>
+			</div>
+			<div class="info-right">
+				<!--商品名-->
+				<div class="proName">
+					<h2>Dogeared/Dogeared whispers 闪电系列纯银手链E2S-S000-100100</h2>
+				</div>
+				<!--商品数据-->
+				<div class="proDetails" id="proDetails">
+					<p class="proList clearfix">
+						<span class="skj">寺库价</span>
+						<em>¥</em>
+						<strong class="Dprice">469</strong>
+					</p>
+					<div class="proList clearfix">
+						<span class="fhd fl">发货地</span>
+						<span class="wh fl"><i>美国</i>有货</span>
+						<p class="fl">预计<b>3-15</b>个工作日内送达 全场包邮，包关税</p>
+					</div>
+					<div class="proList clearfix">
+						<span class="ts fl">温馨提示</span>
+						<div class="tips">
+							<span>本商品无质量问题不支持退换货 </span><br>
+							<span>本商品不支持货到付款</span><br>
+							<span>本商品为特例品,不支持优惠券和不参与会员折扣</span>
+						</div>
+					</div>
+				</div>
+				<!--购买操作-->
+				<div class="proList-box">
+					<!--购买数量选择-->
+					<div class="proList clearfix">
+						<span class="pdt fl">购买数量</span>
+						<div class="pdd fl">
+							<div class="countNum fl">
+								<a href="javascript:;" class="down fl"></a>
+								<input type="text" class="numInp fl" value="1" />
+								<a href="javascript:;" class="up fl"></a>
+							</div>
+							<p class="fl">仅剩<span class="num"> 5 </span>件，抓紧时间购买哦！</p>
+						</div>
+					</div>
+					<!--购买-->
+					<div class="prompt clearfix">
+						<a href="javascript:;" class="topanic fl" id="addBindCar" title="立即抢购"></a>
+						<a href="javascript:;" class="tocart fl" id="addCarInfo" title="加入购物车"></a>
+						<a href="javascript:;" class="staging fl" id="addfq"><i></i>分期支付</a>
+					</div>
+				</div>
+			</div>
+		</div><!--content  end-->
+		<!--showAdds-->
+		<div class="showAdds clearfix">
+			<div class="showAddsLeft fl">
+				<h3>大家都在买</h3>
+				<div class="showLeftCon showLeftCon01">
+					<ul>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3>相关商品</h3>
+				<div class="showLeftCon showLeftCon02">
+					<ul>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="sPic fl">
+								<img src="images/11245063.jpg">
+							</div>
+							<div class="sBox fr">
+								<p class="sName"><a href="#">CARTIER/卡地亚 蓝气球系列精钢女士机械腕表W6920085</a></p>
+								<p class="sPri">
+									<strong>
+										<span class="rmb">¥</span>31,930
+									</strong>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="showAddsRight fr">
+				<div class="sr-nav" id="firstNav">
+					<ul class="clearfix">
+						<li class="select"><a href="javascript:;">商品详情</a></li>
+						<li><a href="javascript:;">商品鉴定</a></li>
+						<li><a href="javascript:;">售后服务</a></li>
+						<li><a href="javascript:;">购买须知</a></li>
+						<li><a href="javascript:;" class="addToCart"></a></li>
+					</ul>
+				</div>
+				<div class="selfbd">
+					<div class="detail">
+						<div class="detailBanner">
+							<img src="images/zhcx_pic_1.jpg">
+						</div>
+						<div class="moudle-details">
+							<span></span>
+						</div>
+						<div class="t-info">
+							<ul class="clearfix">
+								<li>材质属性：银饰</li>
+								<li>风格：欧美</li>
+								<li>产地：美国</li>
+								<li>品牌名称：Dogeared</li> 
+							</ul>
+						</div>
+						<div class="moudle-detail">
+							<div class="moudle-top">
+								<span></span>
+							</div>
+							<p>Dogeared whispers 闪电系列纯银手链</p>
+							<p>美国热门品牌~好莱坞明星最愛~ 時尚大方~最畅销的祈愿手链~</p>
+							<p>精致优雅百搭~每戴上一次~就將愿望许一次~超灵验!</p><br><br><br>
+							<p>品牌：Dogeared</p>
+							<p>产地/来源：美国 </p>
+							<p>吊坠材质：纯银</p>
+							<p><img src="images/moudle01.jpg"></p>
+							<p>Dogeared是来自美国纯手工制作的珠宝品牌，英国凯特王妃、安妮·海瑟薇、安吉丽娜·朱莉、VIVI杂志的梨花、大小S、范玮琪、宋慧乔、高圆圆、Angelababy等明星都佩戴过，韩剧《继承者们》热播后风靡全亚洲。</p>
+							<p>欧美明星，中、日、韩的各大明星和知名模特，都开始频繁地佩戴Dogeared。</p>
+							<p><img src="images/moudle02.jpg"></p>
+							<p><img src="images/moudle03.jpg"></p>
+							<p><img src="images/moudle04.jpg"></p>
+							<p><img src="images/moudle05.jpg"></p>
+						</div>
+					</div>
+				</div>
+				<div class="conment">
+					<div class="dc-title">
+						<ul class="clearfix">
+							<li><a href="javascript:;" id="commentCount">该商品评价（0）</a></li>
+							<li class="on"><a href="javascript:;" id="commentCount">同品牌评价（0）</a></li>
+						</ul>
+					</div>
+					<div class="dc-bd">
+						<div class="dc-c-pl">
+							<ul class="clearfix">
+								<li class="on">全部（11）</li>
+								<li>有图评价（0）</li>
+							</ul>
+						</div>
+						<div class="dc-list">
+							<dl>
+								<dt>
+									<p><img src="http://pic12.secooimg.com/home/detail/tx.jpg" width="50" height="50"></p><p class="name">w***0</p>            
+								</dt>
+								<dd>
+									<div class="pl-detatil">
+										<div class="d-pf clearfix">
+											<p class="fl star-x">
+												<span></span>5.0
+											</p>
+											<p class="fr">来自寺库Android客户端 |同品牌评价|2016/07/02 21:18:38</p>
+										</div>
+										<div class="d-cont">还不错，喜欢</div>
+										<div class="d-photos clearfix">
+											<p class="fl"><a href="#">Dogeared/Dogeared make a wish 斜十字系列纯银手链E2S-S000-100200</a></p>
+											<span class="dz fr">
+												<i></i><span class="parseCount">（0）</span>
+											</span>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<p><img src="http://pic12.secooimg.com/home/detail/tx.jpg" width="50" height="50"></p><p class="name">w***0</p>            
+								</dt>
+								<dd>
+									<div class="pl-detatil">
+										<div class="d-pf clearfix">
+											<p class="fl star-x">
+												<span></span>5.0
+											</p>
+											<p class="fr">来自寺库Android客户端 |同品牌评价|2016/07/02 21:18:38</p>
+										</div>
+										<div class="d-cont">还不错，喜欢</div>
+										<div class="d-photos clearfix">
+											<p class="fl"><a href="#">Dogeared/Dogeared make a wish 斜十字系列纯银手链E2S-S000-100200</a></p>
+											<span class="dz fr">
+												<i></i><span class="parseCount">（0）</span>
+											</span>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<p><img src="http://pic12.secooimg.com/home/detail/tx.jpg" width="50" height="50"></p><p class="name">w***0</p>            
+								</dt>
+								<dd>
+									<div class="pl-detatil">
+										<div class="d-pf clearfix">
+											<p class="fl star-x">
+												<span></span>5.0
+											</p>
+											<p class="fr">来自寺库Android客户端 |同品牌评价|2016/07/02 21:18:38</p>
+										</div>
+										<div class="d-cont">还不错，喜欢</div>
+										<div class="d-photos clearfix">
+											<p class="fl"><a href="#">Dogeared/Dogeared make a wish 斜十字系列纯银手链E2S-S000-100200</a></p>
+											<span class="dz fr">
+												<i></i><span class="parseCount">（0）</span>
+											</span>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<p><img src="http://pic12.secooimg.com/home/detail/tx.jpg" width="50" height="50"></p><p class="name">w***0</p>            
+								</dt>
+								<dd>
+									<div class="pl-detatil">
+										<div class="d-pf clearfix">
+											<p class="fl star-x">
+												<span></span>5.0
+											</p>
+											<p class="fr">来自寺库Android客户端 |同品牌评价|2016/07/02 21:18:38</p>
+										</div>
+										<div class="d-cont">还不错，喜欢</div>
+										<div class="d-photos clearfix">
+											<p class="fl"><a href="#">Dogeared/Dogeared make a wish 斜十字系列纯银手链E2S-S000-100200</a></p>
+											<span class="dz fr">
+												<i></i><span class="parseCount">（0）</span>
+											</span>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--中间部分结束-->
+	<!--shopping Box-->
+	<div class="shbox">
+		<div class="shbox-title">
+			添加购物车成功
+			<a href="javascript:;" class="closebox"></a>
+		</div>
+		<div class="shbox-bd">
+			添加成功
+		</div>
+		<div class="shbox-btn">
+			<a href="shoppingCart.html" class="toCart" target="_blank">去购物车结算</a>
+			<a href="javascript:;" class="toBuy closebox">继续购物</a>
+		</div>
+	</div><!--shopping box end-->
+	<!--客户服务和回到顶部-->
+	<div class="fasService">
+		<a href="#" title="客户服务"></a>
+	</div>
+	<div class="fsFixedTop">
+		<a href="javascript:;" class="fsa app">
+			<span><img src="images/pic28.jpg" alt=""><br>扫描下载APP</span>
+		</a>
+		<a href="javascript:;" class="fsa backtop"></a>
+	</div>
+	<!--网页尾部-->
+	<div class="footerWarp"></div>
+	<!--网页尾部结束-->
+</body>
+</html>

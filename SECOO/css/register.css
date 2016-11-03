@@ -1,0 +1,118 @@
+.bgColor .box .reg-box{
+	width:310px;padding:30px 35px;margin-top: 80px;background: #fff;
+	position: relative;
+}
+.bgColor .box .reg-box input{
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+}
+.bgColor .box .reg-box input:focus{
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .075),0 0 5px rgba(240, 127, 5, .4);
+	transition: border linear .2s, box-shadow linear .2s;
+}
+
+	/***表单***/
+/**用户名**/
+.tab_phone{
+	position: relative;
+}
+.tab_phone .regtips span,.submitBox .regtips span{
+	height:40px;line-height: 40px;display: block;color: #666;
+}
+.tab_phone .regtips .t_left{
+	float:left;width:60px;
+}
+.tab_phone div,.submitBox div{
+	width:100%;
+}
+.tab_phone .regtips .tips{
+	float: right;width:240px;text-align: right;
+}
+.tab_phone .input,.submitBox .input{
+	width:298px;color: #000;font-family: 'microsoft yahei';height:20px;
+	padding:10px 5px;line-height: 20px;font-size: 14px;
+	border:1px solid #dedede;float:left;font-weight: bold;
+}
+.autoShow{
+	width:100%;position: absolute;top:82px;height: 100px;
+}
+.autoShow ul li{
+	padding:0 ;
+}
+/**用户名结束**/
+
+/**验证码**/
+.tab_phone .regCode{
+	width：100%；
+}
+.tab_phone .regCode .codeInput{
+	width:115px;color: #333;font-family: 'microsoft yahei';
+}
+.tab_phone .regInput{
+	height:20px;padding:10px 5px;line-height: 20px;
+	border:1px solid #dedede;float:left;font-weight: bold;
+}
+.tab_phone .regCode span{
+	width:80px;height:37px;display: inline-block;
+	margin:2px 0 0 9px;float: left;background: #333;color: #fff;font-size: 20px;
+	text-align: center;line-height: 37px;
+}
+.tab_phone .regCode a{
+	height: 20px;line-height: 20px;padding:15px 0 0 5px;display: inline-block;float: left;
+}/**验证码结束**/
+
+/**手机短信验证码**/
+.tab_phone .phoneNumberCode{
+	padding-top:12px;
+}
+.tab_phone .phoneNumberCode .dxCodeInput{
+	width:115px;float:left;display: inline-block;
+}
+.tab_phone .phoneNumberCode .getCode{
+	margin:9px 0 0 9px;width:106px;height:25px;text-align: center;line-height: 25px;
+	color: #5d5d5d;float:left;border:1px solid #cfcfcf;background:#f6f5fa;display: inline-block;
+}
+.tab_phone .phoneNumberCode .getCode:hover{
+	color:#f30;cursor: pointer;
+}/**手机短信验证码结束**/
+
+/***提交部分***/
+.submitBox .regtips .t_left{
+	float:left;width:100px;
+}
+.submitBox .regtips .tips{
+	width:150px;float: right;text-align: right;
+}
+.submitBox .input{
+	width:298px;color: #000;font-family: 'microsoft yahei';height:20px;
+	padding:10px 5px;line-height: 20px;font-size: 14px;
+	border:1px solid #dedede;float:left;font-weight: bold;
+}
+.submitBox .msaTips{
+	width:298px;color: #000;font-family: 'microsoft yahei';height:40px;
+	padding:0 5px;line-height: 40px;font-size: 14px;
+	float:left;font-weight: bold;margin-top: 8px;display: none;
+}
+.submitBox  #registerBtn{
+	width:100%;background: #f19108;cursor: pointer;height:50px;line-height: 50px;
+	font-size: 16px;color: #fff;text-align: center;font-weight: bold;margin-top: 8px;
+}
+.submitBox p{
+	width:100%;height:20px;line-height: 20px;color:#999;padding:5px 0;
+}
+.submitBox p .lg{
+	color:#f19108;
+}
+/*输入框获得焦点*/
+ul li div .focus{
+	border-color:#9d003f;
+	outline: 0;
+}
+
+.error{
+	color:red;font-weight: bold;
+}
+
+.inputerror{
+	border-color:red;
+	outline: 0;
+}

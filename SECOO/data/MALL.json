@@ -1,0 +1,167 @@
+[	
+	{	
+		"ID":"0",
+		"type":"bags",
+		"textcon":[
+
+					{"tit":"FENDI包袋","link":"list.html?p=0&q=HERMES","msg":"全场1700元起"},
+					{"tit":"CELINE包袋","link":"list.html?p=0&q=CELINE","msg":"品牌限时特惠"},
+					{"tit":"MiuMiu包袋","link":"list.html?p=0&q=MiuMiu","msg":""},
+					{"tit":"wenkder/假日行者","link":"list.html?p=0&q=weekender","msg":"拉杆箱"},
+					{"tit":"BURBERRY","link":"list.html?p=0&q=BURBERRY","msg":"博柏利包袋"},
+					{"tit":"COACH","link":"list.html?p=0&q=COACH","msg":"蔻驰包袋"}
+				],
+		"imgsrc":["MALL/mall01_item-first.jpg","MALL/mall01_item-big.jpg","MALL/mall01_item01.jpg","MALL/mall01_item02.jpg","MALL/mall01_item03.jpg","MALL/mall01_item04.jpg"]
+	},      
+	{	
+		"ID":"1",
+		"type":"watch",
+		"textcon":[
+
+					{"tit":"一块欧米茄是毛衣的最佳搭档","msg":"3.8折起"},
+					{"tit":"TISSOT/天梭","link":"list.html?p=1&q=TISSOT","msg":"限时特惠"},
+					{"tit":"Hamilton/汉米尔顿","link":"list.html?p=1&q=Hamilton","msg":"品牌精选"},
+					{"tit":"MOVADO/摩凡陀","link":"list.html?p=1&q=MOVADO","msg":"品牌精选"},
+					{"tit":"sevenfriday","link":"list.html?p=1&q=sevenfriday","msg":"品牌精选"},
+					{"tit":"OMEGA","link":"list.html?p=1&q=OMEGA","msg":"欧米茄精选"}
+				],
+		"imgsrc":["MALL/mall02_item-first.jpg","MALL/mall02_item-big.jpg","MALL/mall02_item01.jpg","MALL/mall02_item02.jpg","MALL/mall02_item03.jpg","MALL/mall02_item04.jpg"]
+	},         
+	{	
+		"ID":"2",
+		"type":"clothing",
+		"textcon":[
+
+					{"tit":"LASCANA","msg":"露出的内带当然要美美的"},
+					{"tit":"RICHMOND/里士满","link":"list.html?p=2&q=RICHMOND","msg":"男士精选"},
+					{"tit":"NEIL BARRETT/尼奥·贝奈特","link":"list.html?p=2&q=NEIL BARRETT","msg":"品牌推荐"},
+					{"tit":"Dolce&Gabbana/杜嘉班纳","link":"list.html?p=2&q=Dolce Gabbana","msg":"16年秋冬新品"},
+					{"tit":"Valentino/华伦天奴","link":"list.html?p=2&q=Valentino","msg":"品牌推荐"},
+					{"tit":"VERSACE JEANS/范思哲牛仔","link":"list.html?p=2&q=VERSACE","msg":"16年秋冬新品"}
+				],
+		"imgsrc":["MALL/mall03_item-first.jpg","MALL/mall03_item-big.jpg","MALL/mall03_item01.jpg","MALL/mall03_item02.jpg","MALL/mall03_item03.jpg","MALL/mall03_item04.jpg"]
+	},                  
+	{	
+		"ID":"3",
+		"type":"shoes",
+		"textcon":[
+
+					{"tit":"NEW 早秋上新","msg":"一双好鞋倍增你的入职几率"},
+					{"tit":"BALLY","link":"list.html?p=3&q=BALLY","msg":"大牌男鞋专场"},
+					{"tit":"Roger Vivier","link":"list.html?p=3&q=HOGAN","msg":"精品女鞋专场"},
+					{"tit":"Marie Claire","link":"list.html?p=3&q=HOGAN","msg":"时尚女鞋专场"},
+					{"tit":"Salvatore Ferragamo","link":"list.html?p=3&q=Ferragamo","msg":"大牌男女鞋专场"},
+					{"tit":"ELLE HOMME","link":"list.html?p=3&q=ELLE HOMME","msg":"时尚男鞋专场"}
+				],
+		"imgsrc":["MALL/mall04_item-first.jpg","MALL/mall04_item-big.jpg","MALL/mall04_item01.jpg","MALL/mall04_item02.jpg","MALL/mall04_item03.jpg","MALL/mall04_item04.jpg"]
+	},                       
+	{	
+		"ID":"4",
+		"type":"acce",
+		"textcon":[
+					{"tit":"百款针扣腰带","msg":"5折起"},
+					{"tit":"大牌眼镜专场","link":"list.html?p=4&q=RayBan","msg":""},
+					{"tit":"HUGO BOSS/雨果波士","msg":"腰带精选"},
+					{"tit":"Fulton/富尔顿","msg":"畅销雨天"},
+					{"tit":"Police/警察","msg":"时尚太阳镜"},
+					{"tit":"MARJA KURKI/玛丽亚古琦","msg":"丝巾精选"}					
+				],
+		"imgsrc":["MALL/mall05_item-first.jpg","MALL/mall05_item-big.jpg","MALL/mall05_item01.jpg","MALL/mall05_item02.jpg","MALL/mall05_item03.jpg","MALL/mall05_item04.jpg"]
+	},                              
+	{	
+		"ID":"5",
+		"type":"jewelry",
+		"textcon":[
+					{"tit":"BVLGARI手镯项链","msg":"2889元起"},
+					{"tit":"CHANEL/香奈儿","msg":"品牌精选"},
+					{"tit":"Swarovski/施华洛世奇","msg":"品牌精选"},
+					{"tit":"HERMES/爱马仕","msg":"品牌精选"},
+					{"tit":"PANDORA/潘多拉","msg":"品牌精选"},
+					{"tit":"Tiffany & Co./蒂芙尼","msg":"品牌精选"}					
+				],
+		"imgsrc":["MALL/mall06_item-first.jpg","MALL/mall06_item-big.jpg","MALL/mall06_item01.jpg","MALL/mall06_item02.jpg","MALL/mall06_item03.jpg","MALL/mall06_item04.jpg"]
+	},                                
+	{	
+		"ID":"6",
+		"type":"life",
+		"textcon":[
+					{"tit":"你家的净化器该升级了","msg":"3折起"},
+					{"tit":"厨房小家电专场","msg":""},
+					{"tit":"CEARCO","msg":"西班牙手工"},
+					{"tit":"英尼斯越南家具专场","msg":""},
+					{"tit":"美容健康专场","msg":""},
+					{"tit":"清洁小家电专场","msg":""}					
+				],
+		"imgsrc":["MALL/mall07_item-first.jpg","MALL/mall07_item-big.jpg","MALL/mall07_item01.jpg","MALL/mall07_item02.jpg","MALL/mall07_item03.jpg","MALL/mall07_item04.jpg"]
+	},                                      
+	{	
+		"ID":"7",
+		"type":"outdoor",
+		"textcon":[
+					{"tit":"自己动手的乐趣","msg":"秋季户外烧烤正当时"},
+					{"tit":"PATAGONIA/巴塔哥尼亚","msg":"品牌推荐"},
+					{"tit":"Salomon萨洛蒙","msg":"户外鞋靴"},
+					{"tit":"THE NORTH FACE/北面","msg":"品牌推荐"},
+					{"tit":"coleman/科勒曼","msg":"总有你需要的"},
+					{"tit":"NEXTORCH/纳丽德","msg":"户外装备"}
+									
+				],
+		"imgsrc":["MALL/mall08_item-first.jpg","MALL/mall08_item-big.jpg","MALL/mall08_item01.jpg","MALL/mall08_item02.jpg","MALL/mall08_item03.jpg","MALL/mall08_item04.jpg"]
+	},                                     
+	{	
+		"ID":"8",
+		"type":"beauty",
+		"textcon":[
+					{"tit":"过敏季走开","msg":"我的脸红只能留给心动"},
+					{"tit":"SK-II","msg":"美容护肤"},
+					{"tit":"CHANEL","msg":"美容护肤"},
+					{"tit":"DIOR","msg":"美容护肤"},
+					{"tit":"Biotherm","msg":"男士专区"},
+					{"tit":"Clinique","msg":"换季美妆专场"}
+									
+				],
+		"imgsrc":["MALL/mall09_item-first.jpg","MALL/mall09_item-big.jpg","MALL/mall09_item01.jpg","MALL/mall09_item02.jpg","MALL/mall09_item03.jpg","MALL/mall09_item04.jpg"]
+	},                                 
+	{	
+		"ID":"9",
+		"type":"baby",
+		"textcon":[
+					{"tit":"开学季","msg":"用新衣服叫宝贝起床"},
+					{"tit":"Hanakimi/Hanakim","msg":"秋季出行必备"},
+					{"tit":"母婴护肤","msg":""},
+					{"tit":"LBB/LBB","msg":"婴儿服装"},
+					{"tit":"GRACO/葛莱","msg":"安全座椅"},
+					{"tit":"Nutrilon/荷兰牛栏","msg":"宝宝安心吃"}
+									
+				],
+		"imgsrc":["MALL/mall10_item-first.jpg","MALL/mall10_item-big.jpg","MALL/mall10_item01.jpg","MALL/mall10_item02.jpg","MALL/mall10_item03.jpg","MALL/mall10_item04.jpg"]
+	},                                     
+	{	
+		"ID":"10",
+		"type":"vere",
+		"textcon":[
+					{"tit":"有它们中秋节才圆满","msg":"手工黄酒限量"},
+					{"tit":"如是净莲","msg":"中式服装</br>秋冬新品"},
+					{"tit":"步瀛斋","msg":"百年老字号</br>手工布鞋"},
+					{"tit":"YAANG","msg":"东方美学</br>精致生活品味"},
+					{"tit":"博玉东方","msg":"国礼品牌</br>美轮美奂"},
+					{"tit":"满家弄","msg":"传统工艺</br>手工制茶"}
+									
+				],
+		"imgsrc":["MALL/mall11_item-first.jpg","MALL/mall11_item-big.jpg","MALL/mall11_item01.jpg","MALL/mall11_item02.jpg","MALL/mall11_item03.jpg","MALL/mall11_item04.jpg"]
+	},                                     
+	{	
+		"ID":"11",
+		"type":"car",
+		"textcon":[
+					{"tit":"百年玛莎","msg":"当优雅融入你的生活"},
+					{"tit":"PHILIPPI","msg":"现代精品摆饰"},
+					{"tit":"大疆/亿航","msg":"无人机专场"},
+					{"tit":"goodbaby/RECARO/瑞凯威","msg":"安全座椅专场"},
+					{"tit":"jxhracing将相侯","msg":"机车骑行服专场"},
+					{"tit":"BBS","msg":"豪车轮毂专场"}
+									
+				],
+		"imgsrc":["MALL/mall12_item-first.jpg","MALL/mall12_item-big.jpg","MALL/mall12_item01.jpg","MALL/mall12_item02.jpg","MALL/mall12_item03.jpg","MALL/mall12_item04.jpg"]
+	}
+]       
