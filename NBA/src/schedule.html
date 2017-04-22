@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/schedule.css" />
+	<script src="js/require.js"></script>
+	<script src="js/config.js"></script>
+	<body>
+
+  <div class="header-main">
+    <!--头部-->
+    <header>
+      <h1 id="title">赛程</h1>
+    </header><!--头部结束-->
+
+    <!--集锦-->
+    <div class="wrap-header-main">
+
+    </div><!--集锦结束-->
+  </div>
+
+
+<div class="content-main-wrap">
+	<div class="content-main">
+		<nav class="clear">
+			<a href="#">全部</a>
+			<a href="#">火箭</a>
+			<a href="#">湖人</a>
+			<a href="#">骑士</a>
+			<a href="#">勇士</a>
+		</nav>
+		<div class="item_day">2016-10-18</div>
+		<main>
+			<div class="wrap">
+				<!--<ul class="main_ul">
+	<Li>
+		<div>
+			<img src="images/1.png" alt="" />
+			<p>篮网</p>
+			<i>99</i>
+		</div>
+		<span class="time">07:30</span>
+	</Li>
+	<li>
+		<div>
+			<img src="images/2.png" alt="" />
+			<p>凯尔特人</p>
+			<i>120</i>
+		</div>
+		<span class="status">已结束</span>
+	</li>
+</ul>
+<ul class="main_ul">
+	<Li>
+		<div>
+			<img src="images/1.png" alt="" />
+			<p>篮网</p>
+			<i>99</i>
+		</div>
+		<span class="time">07:30</span>
+	</Li>
+	<li>
+		<div>
+			<img src="images/2.png" alt="" />
+			<p>凯尔特人</p>
+			<i>120</i>
+		</div>
+		<span class="status">已结束</span>
+	</li>
+</ul>
+<ul class="main_ul">
+	<Li>
+		<div>
+			<img src="images/1.png" alt="" />
+			<p>篮网</p>
+			<i>99</i>
+		</div>
+		<span class="time">07:30</span>
+	</Li>
+	<li>
+		<div>
+			<img src="images/2.png" alt="" />
+			<p>凯尔特人</p>
+			<i>120</i>
+		</div>
+		<span class="status">已结束</span>
+	</li>
+</ul>
+<ul class="main_ul">
+	<Li>
+		<div>
+			<img src="images/1.png" alt="" />
+			<p>篮网</p>
+			<i>99</i>
+		</div>
+		<span class="time">07:30</span>
+	</Li>
+	<li>
+		<div>
+			<img src="images/2.png" alt="" />
+			<p>凯尔特人</p>
+			<i>120</i>
+		</div>
+		<span class="status">已结束</span>
+	</li>
+</ul>                                              -->
+			</div>
+			<div class="item_day1">2016-10-19</div>
+			<div class="wraper">
+				<ul class="main_ul tommrow">
+					<!--<li>
+							<div>
+								<img src="images/1.png" alt="" />
+								<p>篮网</p>
+								<i>07:00</i>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="images/2.png" alt="" />
+								<p>凯尔特人</p>
+								<i>NBA季前赛</i>
+							</div>
+							<span class="status">未开赛</span>
+					</li> -->
+				</ul>
+			</div>
+		</main>
+	</div>
+</div>
+
+<!--尾部-->
+  <footer>
+    <ul>
+      <li><a href="index.html" title="首页">首页</a></li>
+      <li><a href="collection.html" title="集锦">集锦</a></li>
+      <li><a href="schedule.html" title="赛程">赛程</a></li>
+      <li><a href="player.html" title="排名">排名</a></li>
+    </ul>
+  </footer><!--尾部结束-->
+
+
+
+	</body>
+	<script>
+			require(["jquery","schedule"],function($,sch){
+				function resize(){
+					var width=document.documentElement.clientWidth;
+					//console.log(width);
+					$('html').css("font-size",width/3.75);
+				}
+				$(window).on("resize",resize);
+				resize();
+				/*添加data对象作为参数传入ajax中*/
+				var arr=[{
+							url:"http://op.juhe.cn/onebox/basketball/nba",
+							key:'e93c19dfd95e99af00f8d1ba555b6349',
+						},
+						{
+							url:"http://op.juhe.cn/onebox/basketball/team",
+							key:'e93c19dfd95e99af00f8d1ba555b6349',
+							team:'火箭'
+						},
+						{
+							url:"http://op.juhe.cn/onebox/basketball/team",
+							key:'e93c19dfd95e99af00f8d1ba555b6349',
+							team:'湖人'
+						},
+						{
+							url:"http://op.juhe.cn/onebox/basketball/team",
+							key:'e93c19dfd95e99af00f8d1ba555b6349',
+							team:'骑士'
+						},
+						{
+							url:"http://op.juhe.cn/onebox/basketball/team",
+							key:'e93c19dfd95e99af00f8d1ba555b6349',
+							team:'勇士'
+						}
+						];
+				sch.getData(function(res){
+					fun(res);
+				},arr[0])
+				function fun(res){
+					console.log(res);
+					var html='';
+					$('.item_day').html(res.result['list'][1].title);
+					$('.item_day1').html(res.result['list'][2].title);
+					for(var i=0;i<res.result.list[1].tr.length;i++){
+						var score=res.result.list[1].tr[i].score.split('-');
+						var time=res.result.list[1].tr[i].time.split(' ');
+						//console.log(time);
+						var status=res.result.list[1].tr[i].status;
+						switch(status){
+							case 0:  status="未开赛";break;
+							case 1:  status="直播中";break;
+							default: status="已结束";break;
+						}
+						console.log(status);
+						html+='<ul class="main_ul"><li><div><a href="'+res.result.list[1].tr[i].player1url+'"><img src="'+res.result.list[1].tr[i].player1logo+'" alt="" /><p>'+res.result.list[1].tr[i].player1+'</p></a>'
+						+'<i>'+score[0]+'</i></div><span class="time">'+time[1]+'</span></li><li><div>'
+						+'<a href="'+res.result.list[1].tr[i].player2url+'"><img src="'+res.result.list[1].tr[i].player2logo+'" alt="" /><p>'+res.result.list[1].tr[i].player2+'</p></a><i>'+score[1]+'</i></div>'
+						+'<a href="'+res.result.list[1].tr[i].link1url+'"><span class="status">'+status+'</span></a></li></ul>'
+					}
+					$('.wrap').html(html);
+					//console.log(res.result.title.split('_'));
+					var html1='';
+					for(var j=0;j<res.result.list[2].tr.length;j++){
+
+						html1+='<li><div><a href="'+res.result.list[2].tr[j].player1url+'"><img src="'+res.result.list[2].tr[j].player1logo+'" alt="" /><p>'+res.result.list[2].tr[j].player1+'</p></a><i>'+res.result.list[2].tr[j].time.split(' ')[1]+'</i>'
+						+'</div></li><li><div><a href="'+res.result.list[2].tr[j].player2url+'"><img src="'+res.result.list[2].tr[j].player2logo+'" alt="" />'
+						+'<p>'+res.result.list[2].tr[j].player2+'</p></a><i>'+res.result.title.split('_')[0]+'</i></div><a href="'+res.result.list[2].tr[j].link1url+'"><span class="status">未开赛</span></a></li>'
+					}
+					//console.log(html1);
+					$('.tommrow').html(html1);
+				}
+				/*球队对战加载回调*/
+				function fun1(res,val){
+					console.log(res);
+					var html1='';
+					$('.item_day').html(val+"比赛预况");
+					$('.item_day1').html('具体场次');
+					var html='';
+					for(var j=0;j<res.result.list.length;j++){
+					html1+='<li><div><a href="'+res.result.list[j].player1url+'"><img src="'+res.result.list[j].player1logo+'" alt="" /><p>'+res.result.list[j].player1+'</p></a><i>'+res.result.list[j].time+'</i>'
+					+'</div></li><li><div><a href="'+res.result.list[j].player2url+'"><img src="'+res.result.list[j].player2logo+'" alt="" />'
+					+'<p>'+res.result.list[j].player2+'</p></a><i>'+res.result.title.split('_')[0]+'</i></div><a href="'+res.result.list[j].link1url+'"><span class="status">未开赛</span></a></li>'
+					}
+					//console.log(html1);
+					$('.tommrow').html(html1);
+					$('.wrap').html(null);
+				}
+				/*给导航栏添加事件*/
+				$('nav a').on('click',function(){
+					var index=$(this).index();
+					console.log(index);
+					if(index==0){
+						sch.getData(function(res){
+						fun(res);
+						},arr[index])
+					}else{
+						var val=$(this).html();
+						//console.log($(this).html())
+						sch.getData(function(res){
+						//console.log(res);
+						fun1(res,val);
+						},arr[index])
+					}
+
+				})
+			})
+
+
+
+	</script>
+</html>

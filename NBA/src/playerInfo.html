@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/player.css">
+  <script type="text/javascript" src="js/require.js"></script>
+  <script type="text/javascript" src="js/config.js"></script>
+</head>
+<body>
+  <div id="playerInfo">
+    <ul>
+    </ul>
+  </div>
+</body>
+<script type="text/javascript">
+  require(['jquery','data'],function($,data){
+    data.getData('nba',function(res){
+      var res = res.result.teammatch;
+      var html = '';
+      res.forEach(function(item,i){
+        html += '<li data-src="'+item.url+'">'+item.name+'</li>';
+      })
+      $('ul','#playerInfo').html(html);
+
+      $('ul','#playerInfo').on('click','li',function(){
+        var src = $(this).data('src');
+        window.location.href = src;
+      })
+    })
+  })
+</script>
+</html>
